@@ -51,21 +51,20 @@ playwright-demo/
 ```
 ## Lets get started!
 
-Before running tests, start the Appium server with the following command:
-
+# 1. IBefore running tests, clone the repository:
 ```bash
 git clone https://github.com/anslmbndo/Playwright-Automation-Framework.git
 cd Playwright-Automation-Framework
 ```
 
 
-# 1. Install dependencies
+# 2. Install dependencies
 ```bash
 npm install
 npm install -D @playwright/test
 npx playwright install
 ```
-# 2. Set up the environment then.....RUN!
+# 3. Set up the environment then.....RUN!
 ```bash
 set ENV=production
 npx playwright test saucedemoV4.test.ts
