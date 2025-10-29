@@ -72,11 +72,8 @@ set ENV=production
 npx playwright test saucedemoV4.test.ts
 ```
 
-
-**Example:**
+# Author
 ```markdown
-## Author
-
 **Anselm Abundo**  
 *Quality Assurance Engineer | Automation & Performance Tester*  
 
