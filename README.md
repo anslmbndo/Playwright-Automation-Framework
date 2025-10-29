@@ -1,19 +1,80 @@
-##Playwright Automation Framework
+#Playwright Automation Framework
+
 This project is a **modular, reusable Playwright test automation framework** built using the **Screenplay Pattern**.  
 It is designed for scalability, readability, and maintainability — ideal for real-world web app testing.
+
 # features
 
-- JDK version: 21.0.8  
-- Appium version: 3.0.1  
-- Node.js version: v22.17.0  
-- Connected Android device or emulator  
-- ADB version:  
-  - Android Debug Bridge version 1.0.41  
-  - Version 36.0.0-13206524  
+- Built with [Playwright](https://playwright.dev)
+- Implements the **Screenplay Pattern** (Actors, Tasks, Questions, and Models)
+- Actor memory — share data dynamically across tasks
+- Data-driven test design (JSON-based test data)  
+- Modular architecture for multi-app support (e.g. SauceDemo, DemoQA)
+- Logging and descriptive test output
+- Scalable for both frontend and backend test automation
+- Supports multiple environments (e.g. dev, staging, prod) via configurable environment settings
 
-## Running Appium Server
+# Structure
+playwright-demo/
+├── core/
+│ ├── actor/
+│ │ ├── Actor.ts
+│ │ └── BaseTask.ts
+│ ├── config/
+│ │ ├── Environment.ts
+│
+├── apps/
+│ ├── saucedemo/
+│ │ ├── data/
+│ │ │ └── usersAndCustInfo.ts
+│ │ ├── models/
+│ │ │ └── Product.ts
+│ │ ├── pages/
+│ │ │ ├── InventoryPage.ts
+│ │ │ ├── CartPage.ts
+│ │ │ └── CheckoutPage.ts
+│ │ ├── tasks/
+│ │ │ ├── Login.ts
+│ │ │ ├── AddToCart.ts
+│ │ │ ├── GoToCart.ts
+│ │ │ ├── Checkout.ts
+│ │ │ └── ValidateCart.ts
+│ │ └── tests/
+│ │ ├── saucedemoV3.test.ts
+│ │ └── saucedemoV4.test.ts
+│ │
+│ └── demoqa/ ← upcoming app integration
+│ └── ...
+│
+├── playwright.config.ts
+└── package.json
+
+## Lets get started!
 
 Before running tests, start the Appium server with the following command:
 
 ```bash
-appium -p 4723 -a 127.0.0.1 --base-path /wd/hub
+git clone https://github.com/anslmbndo/Playwright-Automation-Framework.git
+cd Playwright-Automation-Framework
+```
+
+
+# 1. Install dependencies
+```bash
+npm install
+npm install -D @playwright/test
+npx playwright install
+```
+# 2. Set up the environment then.....RUN!
+```bash
+set ENV=production
+npx playwright test saucedemoV4.test.ts
+```
+
+
+
+# Author
+Anselm Abundo
+Quality Assurance Engineer | Automation & Performance Tester
+📧 Anselm.abundo@gmail.com
+🔗 [LinkedIn](www.linkedin.com/in/anselm-emmanuel-abundo)
