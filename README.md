@@ -1,5 +1,4 @@
-#Playwright Automation Framework
-
+# Playwright Automation Framework
 This project is a **modular, reusable Playwright test automation framework** built using the **Screenplay Pattern**.  
 It is designed for scalability, readability, and maintainability — ideal for real-world web app testing.
 
@@ -74,7 +73,7 @@ npx playwright test saucedemoV4.test.ts
 
 # Author
 ```markdown
-**Anselm Abundo**  
+**Anselm Emmanuel Quimpo Abundo**  
 *Quality Assurance Engineer | Automation & Performance Tester*  
 
 📧 [anselm.abundo@gmail.com](mailto:anselm.abundo@gmail.com)  
