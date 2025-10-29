@@ -51,7 +51,7 @@ playwright-demo/
 ```
 ## Lets get started!
 
-# 1. IBefore running tests, clone the repository:
+# 1. Before running tests, clone the repository:
 ```bash
 git clone https://github.com/anslmbndo/Playwright-Automation-Framework.git
 cd Playwright-Automation-Framework
