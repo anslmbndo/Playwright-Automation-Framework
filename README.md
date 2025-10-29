@@ -73,9 +73,13 @@ npx playwright test saucedemoV4.test.ts
 ```
 
 
+**Example:**
+```markdown
+## Author
 
-# Author
-Anselm Abundo
-Quality Assurance Engineer | Automation & Performance Tester
-📧 Anselm.abundo@gmail.com
-🔗 [LinkedIn](www.linkedin.com/in/anselm-emmanuel-abundo)
+**Anselm Abundo**  
+*Quality Assurance Engineer | Automation & Performance Tester*  
+
+📧 [anselm.abundo@gmail.com](mailto:anselm.abundo@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/anslmabundo/)
+```
