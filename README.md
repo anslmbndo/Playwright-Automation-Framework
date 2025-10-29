@@ -15,6 +15,7 @@ It is designed for scalability, readability, and maintainability — ideal for r
 - Supports multiple environments (e.g. dev, staging, prod) via configurable environment settings
 
 # Structure
+```bash
 playwright-demo/
 ├── core/
 │ ├── actor/
@@ -48,7 +49,7 @@ playwright-demo/
 │
 ├── playwright.config.ts
 └── package.json
-
+```
 ## Lets get started!
 
 Before running tests, start the Appium server with the following command:
